@@ -4,6 +4,11 @@ import * as contentful from 'contentful';
 export default defineEventHandler(async (event) => {
     const config = useRuntimeConfig();
 
+    console.log({
+        space: config.contentful.space,
+        accessToken: config.contentful.cdaToken,
+    })
+
     const client = contentful.createClient({
         space: config.contentful.space,
         accessToken: config.contentful.cdaToken,
