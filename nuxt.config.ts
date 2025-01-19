@@ -6,6 +6,7 @@ export default defineNuxtConfig({
         contentful: {
             cdaToken: '',
             cpaToken: '',
+            space: '',
         },
     },
     generate: {
