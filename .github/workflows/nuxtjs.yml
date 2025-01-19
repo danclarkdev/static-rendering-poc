@@ -19,7 +19,7 @@ jobs:
             # Pass environment variables for the build step
             - run: npx nuxt build --preset github_pages
               env:
-                  NUXT_CONTENTFUL_SPACE_ID: ${{ secrets.NUXT_CONTENTFUL_SPACE_ID }}
+                  NUXT_CONTENTFUL_SPACE: ${{ secrets.NUXT_CONTENTFUL_SPACE }}
                   NUXT_CONTENTFUL_CDA_TOKEN: ${{ secrets.NUXT_CONTENTFUL_CDA_TOKEN }}
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v3
